@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Lambda's School NOT Site </title>
+    <meta charset="UTF-8">
+    <meta name='description' content='Studying DOM Elements @ LambdaSchool Rulez'> 
+    
+  </head>
+  <body>
+   <p> HI SEAN </p>
+   <p> HI STEVIE </p>
+   <p> HI JAKE </p>
+   <p> HI BRANDON </p>
+   <p> HI ANTONIO </p>
+   <p> HI IPHONE </p>
+   <p> HI DAN </p>
+   <script src='/jquery.js'></script>
+  </body>
+  <script>
+function choosesomebody()
+{
+  var max = 6;
+  var min = 0;
+  var sayhi = Math.floor(Math.random() * (max - min)) 
+  console.log(sayhi)
+  $('p').each((index, item) => { 
+    if(index == sayhi) { 
+      console.log($(item).html()) 
+    }
+  }
+  );
+}
+</script>
+</html>
